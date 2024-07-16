@@ -3,7 +3,7 @@ import React, { useState } from "react";
   const TodoApp = () => {
   const [todos, setTodos] = useState([]);
   const [todoInput, setTodoInput] = useState("");
-  const [todoCategory, setTodoCategory] = useState("Personal");
+  const [setTodoCategory] = useState("Personal");
 
   const addTodo = () => {
     if (todoInput.trim() !== "") {
@@ -31,6 +31,8 @@ import React, { useState } from "react";
       <select
         onChange={(e) => setTodoCategory(e.target.value)}>
         <option value="Personal">Personal</option>
+        <option value="Work">Work</option>
+        <option value="Others">Others</option>
       </select>
       {/* <select>
         <option value="test">test</option>
