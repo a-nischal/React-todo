@@ -10,7 +10,8 @@ import Memo from "./UseCallBack";
 //     <>
 //       {/* <Weather /> */}
 //       {/* <Users /> */}
-//       <Counter/>
+//       {/* <Counter/> */}
+//       <Memo />
 //     </>
 //   );
 // }
@@ -34,6 +35,7 @@ const hello = () => {
   // const user = { name: "Nischal", age: 21 };
   return (
     <Memo />
+    // <Counter/>
     // <UserContext.Provider value={user}>
     //   <GrandParent />
 
