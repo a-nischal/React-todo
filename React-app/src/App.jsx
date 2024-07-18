@@ -1,5 +1,6 @@
 // import "./App.css";
-import { createContext, useContext } from "react";
+// import { createContext, useContext } from "react";
+import Memo from "./UseCallBack";
 // import Users from "./User";
 // import Weather from "./Weather";
 // import Counter from "./Counter";
@@ -14,31 +15,33 @@ import { createContext, useContext } from "react";
 //   );
 // }
 
-const UserContext = createContext(null);
+// const UserContext = createContext(null);
 
-const Child = () => {
-  const user = useContext(UserContext);
-  return <h1>{user.name}</h1>;
-};
+// const Child = () => {
+//   const user = useContext(UserContext);
+//   return <h1>{user.name}</h1>;
+// };
 
-const Parent = () => {
-  return <Child />;
-};
+// const Parent = () => {
+//   return <Child />;
+// };
 
-const GrandParent = () => {
-  return <Parent />;
-};
+// const GrandParent = () => {
+//   return <Parent />;
+// };
 
 const hello = () => {
-  const user = { name: "Nischal", age: 21 };
+  // const user = { name: "Nischal", age: 21 };
   return (
-    <UserContext.Provider value={user}>
-      <GrandParent />
-    </UserContext.Provider>
+    <Memo />
+    // <UserContext.Provider value={user}>
+    //   <GrandParent />
+
+    // </UserContext.Provider>
   );
 };
 
-export default hello  ;
+export default hello;
 
 // 1. using local storage in todos app
 // 2. useEffect (api call revise)
