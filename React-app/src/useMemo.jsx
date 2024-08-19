@@ -14,6 +14,7 @@ const App = () => {
       return n * calculateFactorial(n - 1);
     };
    
+   // eslint-disable-next-line react-hooks/exhaustive-deps
    const factorial = useMemo(() => {calculateFactorial(count)}, [count]);
       return (
     <div>
